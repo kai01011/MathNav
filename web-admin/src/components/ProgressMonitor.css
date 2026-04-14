@@ -1,0 +1,312 @@
+.progress-monitor {
+  padding: 20px;
+}
+
+.progress-monitor h2 {
+  margin: 0 0 30px 0;
+  color: #333;
+}
+
+.stats-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-box {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-box h3 {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #667eea;
+  margin: 0;
+}
+
+.quarter-stats {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.quarter-stats h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.quarter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.quarter-stat {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+
+.quarter-stat.q1 { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+.quarter-stat.q2 { background: linear-gradient(135deg, #10b981, #059669); }
+.quarter-stat.q3 { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.quarter-stat.q4 { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+
+.quarter-stat h4 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.quarter-stat p {
+  margin: 5px 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.avg-score {
+  font-size: 24px !important;
+  font-weight: bold;
+  opacity: 1 !important;
+}
+
+.topic-performance {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.topic-performance h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.topic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.topic-item {
+  padding: 15px;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.topic-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.topic-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.topic-count {
+  color: #666;
+  font-size: 14px;
+}
+
+.progress-bar {
+  height: 30px;
+  background: #e5e7eb;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  transition: width 0.5s ease;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-section label {
+  font-weight: 500;
+  color: #555;
+}
+
+.filter-section select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.progress-table {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.progress-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.progress-table th,
+.progress-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.progress-table th {
+  background: #f9fafb;
+  font-weight: 600;
+  color: #555;
+}
+
+.progress-table tr:hover {
+  background: #f9fafb;
+}
+
+.score {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.score.pass {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.score.fail {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+
+.filter-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.student-summary {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.student-summary h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.student-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.student-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.student-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.student-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.student-header h4 {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.avg-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.avg-badge.pass {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.avg-badge.fail {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.student-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-item .label {
+  color: #666;
+  font-size: 14px;
+}
+
+.stat-item .value {
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+}
